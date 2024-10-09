@@ -1,0 +1,77 @@
+.userWrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  height: 80px;
+
+  &.selectedUser {
+    background-color: #f0f0f0;
+  }
+
+  &:hover {
+    background-color: #dfdede;
+  }
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.userDetail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.userName {
+  font-size: 16px;
+  color: #000000;
+  margin: 0;
+}
+
+.truncateText {
+  margin: 0 10px 0 0;
+  max-width: 180px;
+  font-size: 14px;
+  color: #999999;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+
+  strong {
+    font-weight: bold;
+    color: #333;
+  }
+}
+
+.userStatus {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -3px;
+  right: -3px;
+  background-color: #20D63E;
+
+  &.offline {
+    background-color: #a19e9e;
+  }
+}
+
+.unreadBadge {
+  background-color: #f44336;
+  color: #ffffff;
+  padding: 2px 5px;
+  font-size: 12px;
+  border-radius: 5px;
+  margin-left: 10px;
+}

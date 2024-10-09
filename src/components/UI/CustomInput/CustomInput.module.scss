@@ -1,0 +1,30 @@
+.inputContainer {
+  margin: 10px 0;
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    text-align: left;
+    color: #357EBC;
+  }
+
+  .input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    border: 2px solid #CCCCCC;
+    border-radius: 5px;
+    outline: none;
+    transition: border 0.2s;
+
+
+      &::placeholder {
+        color: #CCCCCC;
+      }
+
+    &:focus {
+      border: 2px solid #357EBC;
+    }
+  }
+}

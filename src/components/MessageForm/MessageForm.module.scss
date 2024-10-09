@@ -1,0 +1,31 @@
+.messageForm {
+  width: 100%;
+  background: #D7DFE7;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 15px
+}
+
+.attachmentIcon {
+  position: relative;
+
+  .circle {
+    position: absolute;
+    top: -5px;
+    right: -7px;
+    width: 10px;
+    height: 10px;
+    background-color: #357ebc;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.inputWrapper {
+ width: 65%;
+}
+
+.buttonWrapper {
+  width: 30%;
+}

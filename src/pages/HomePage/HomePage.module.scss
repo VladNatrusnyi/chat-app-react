@@ -1,0 +1,19 @@
+
+.homeContainer {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 1fr;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+
+
+  @media (max-width: 768px) {
+    grid-template-columns: 100%;
+  }
+}
+
+
+
+

@@ -1,0 +1,68 @@
+.navbar {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-bottom: 15px;
+
+  .title {
+    margin: 0;
+    color: #333333;
+    font-size: 30px;
+    text-decoration: none;
+
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+
+  .showUsersButton {
+    display: none;
+    cursor: pointer;
+    margin-right: 15px;
+    margin-bottom: -3px;
+
+    @media (max-width: 768px) {
+      display: inline-block;
+    }
+  }
+
+
+  .links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .linkProfile {
+      color: #333333;
+      text-decoration: none;
+
+      &:hover {
+        color: #428BCA;
+      }
+    }
+
+    .logOutIcon {
+
+      &:hover {
+        color: #428BCA;
+      }
+    }
+
+    .link {
+      color: #333333;
+      text-decoration: none;
+      margin-bottom: 10px;
+
+      &:hover {
+        color: #428BCA;
+      }
+    }
+  }
+}
